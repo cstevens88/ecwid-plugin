@@ -66,6 +66,10 @@ The official BitPay API documentation should always be your first reference for 
 - Check the version of this plugin against the official repository to ensure you are using the latest version. Your issue might have been addressed in a newer version of the library.
 - If all else fails, send an email describing your issue in detail to support@bitpay.com
 
+# Contribute
+
+To contribute to this project, please fork and submit a pull request.
+
 # License
 
 The MIT License (MIT)
