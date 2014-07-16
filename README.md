@@ -1,23 +1,15 @@
-<strong>©2011-2014 BITPAY, INC.</strong>
+bitpay/ecwid-plugin
 
-Permission is hereby granted to any person obtaining a copy of this software and associated documentation for use and/or modification in association with the bitpay.com service.
+# Configuration
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-Bitcoin plugin for Ecwid using the bitpay.com service.
-
-
-
-Instructions
-------------
-In config.php:
+## In config.php:
 - Set $storeURL to the URL of your store's homepage.
 - Set $storeID to your ecwid store ID found in the bottom-right of the Ecwid control panel.
 - Set $bitpayURL to the URL of the bitpay/ folder which you extracted from this plugin.
 - Set $apiKey to the key you created at bitpay.com in the "My Account > API Access Keys" section.
 - Adjust $speed if desired.
 	
-In your Ecwid control panel:
+## In your Ecwid control panel:
 - Click System Settings > Payment, then click Authorize.  Rename this to "Bitpay" or whatever you'd prefer.  
 - Change Payment Processor to Credit Card: Authorize.net SIM
 - Click Account Details
@@ -45,9 +37,23 @@ In your Ecwid control panel:
 </pre>
 - Click Save
 
+# Support
 
-Troubleshooting
----------------
+## BitPay Support
+
+* [GitHub Issues](https://github.com/bitpay/ecwid-plugin/issues)
+  * Open an issue if you are having issues with this plugin.
+* [Support](https://support.bitpay.com)
+  * BitPay merchant support documentation
+
+## ECWID Support
+
+* [Homepage](http://www.ecwid.com/)
+* [Documentation](http://kb.ecwid.com/w/page/25285101/Product%20API)
+* [Support Forums](http://www.ecwid.com/forums/)
+
+# Troubleshooting
+
 The official BitPay API documentation should always be your first reference for development: https://bitpay.com/downloads/bitpayApi.pdf
 
 - Verify that your "notificationURL" for the invoice is "https://" (not "http://")
@@ -59,9 +65,26 @@ The official BitPay API documentation should always be your first reference for 
 - Check the version of this plugin against the official repository to ensure you are using the latest version. Your issue might have been addressed in a newer version of the library.
 - If all else fails, send an email describing your issue in detail to support@bitpay.com
 
+# License
 
-Version
--------
-- Bitpay plugin version 1.0
-- Tested against Ecwid version 13.0.1629
-- Added new HTTP header for version tracking
+The MIT License (MIT)
+
+Copyright (c) 2011-2014 BitPay
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
