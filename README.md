@@ -1,4 +1,5 @@
 bitpay/ecwid-plugin
+===================
 
 # Configuration
 
